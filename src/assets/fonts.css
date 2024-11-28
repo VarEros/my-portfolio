@@ -1,0 +1,20 @@
+@font-face {
+font-family: 'Sarala';
+src: url('@/assets/fonts/Sarala-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+    font-family: 'Railway';
+    src: url('@/assets/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monserrat';
+    src: url('@/assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}

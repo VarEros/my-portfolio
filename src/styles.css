@@ -1,0 +1,28 @@
+/* Esto aplica solo a elementos de texto */
+h1, h2, h3, h4, h5, h6, p, li {
+    margin: 0;
+  }
+
+  h2 {
+    line-height: 1; /* Ajusta el espacio entre las líneas de texto */
+  }
+
+  h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 29px;
+  }
+
+  p {
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  :root {
+    --primary-color: #2C4A4D;
+    --secondary-color: #909090;
+    --background-color: #D7D7D7;
+    --text-color: #1D1D1D;
+    --container-color: #FFFFFF;
+  }

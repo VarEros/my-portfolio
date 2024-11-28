@@ -1,0 +1,152 @@
+[
+    {
+        "image": "typeScript.svg",
+        "name": "TypeScript",
+        "type": "Language"
+    },
+    {
+        "image": "js.svg",
+        "name": "JavaScript",
+        "type": "Language"
+    },
+    {
+        "image": "css3.svg",
+        "name": "CSS3",
+        "type": "Language"
+    },
+    {
+        "image": "html5.svg",
+        "name": "HTML5",
+        "type": "Language"
+    },
+    {
+        "image": "cpp.svg",
+        "name": "C++",
+        "type": "Language"
+    },
+    {
+        "image": "csharp.svg",
+        "name": "C#",
+        "type": "Language"
+    },
+    {
+        "image": "kotlin.svg",
+        "name": "Kotlin",
+        "type": "Language"
+    },
+    {
+        "image": "python.svg",
+        "name": "Python",
+        "type": "Language"
+    },
+    {
+        "image": "php.svg",
+        "name": "PHP",
+        "type": "Language"
+    },
+    {
+        "image": "mssql.svg",
+        "name": "MSSQL",
+        "type": "Database"
+    },
+    {
+        "image": "dart.svg",
+        "name": "Dart",
+        "type": "Language"
+    },
+    {
+        "image": "java.svg",
+        "name": "Java",
+        "type": "Language"
+    },
+    {
+        "image": "flutter.svg",
+        "name": "Flutter",
+        "type": "Framework"
+    },
+    {
+        "image": "nodejs.svg",
+        "name": "NodeJs",
+        "type": "Framework"
+    },
+    {
+        "image": "flask.svg",
+        "name": "Flask",
+        "type": "Framework"
+    },
+    {
+        "image": "spring.svg",
+        "name": "Spring",
+        "type": "Framework"
+    },
+    {
+        "image": "vue.svg",
+        "name": "Vue",
+        "type": "Framework"
+    },
+    {
+        "image": "angular.svg",
+        "name": "Angular",
+        "type": "Framework"
+    },
+    {
+        "image": "oracle.svg",
+        "name": "Oracle DB",
+        "type": "Database"
+    },
+    {
+        "image": "firebase.svg",
+        "name": "Firestore",
+        "type": "Database"
+    },
+    {
+        "image": "sql.svg",
+        "name": "MySQL",
+        "type": "Database"
+    },
+    {
+        "image": "sqlite.svg",
+        "name": "SQLite",
+        "type": "Database"
+    },
+    {
+        "image": "unity.svg",
+        "name": "Unity",
+        "type": "Software"
+    },
+    {
+        "image": "wordpress.svg",
+        "name": "WordPress",
+        "type": "Software"
+    },
+    {
+        "image": "figma.svg",
+        "name": "Figma",
+        "type": "Software"
+    },
+    {
+        "image": "eclipse.svg",
+        "name": "Eclipse",
+        "type": "Software"
+    },
+    {
+        "image": "github.svg",
+        "name": "Github",
+        "type": "Software"
+    },
+    {
+        "image": "gitlab.svg",
+        "name": "GitLab",
+        "type": "Software"
+    },
+    {
+        "image": "tailwind.svg",
+        "name": "Tailwind",
+        "type": "Library"
+    },
+    {
+        "image": "prettier.svg",
+        "name": "Prettier",
+        "type": "Library"
+    }
+]
