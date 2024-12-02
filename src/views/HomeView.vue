@@ -1,4 +1,5 @@
 <script>
+import { ref, onMounted, onUnmounted, computed } from 'vue';
 import SocialIcons from '@/components/SocialIcons.vue';
 import myPic from '../assets/images/eros_vanna_pic.png'
 import ButtonTemplate from '@/components/ButtonTemplate.vue';
@@ -6,29 +7,50 @@ import skillsData from '../assets/skills.json';
 import ProjectCard from '@/components/ProjectCard.vue';
 import projectsData from '../assets/projects.json';
 import ContactForm from '@/components/ContactForm.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
+import MobileTopDiv from '@/components/MobileTopDiv.vue';
 
 export default {
   name: 'HomePage',
   components: {
+    MobileTopDiv,
     SocialIcons,
     ButtonTemplate,
     ProjectCard,
-    ContactForm
+    ContactForm,
+    FooterComponent
   },
-  data() {
+  setup() {
+    const windowWidth = ref(window.innerWidth);
+
+    const updateWindowWidth = () => {
+      windowWidth.value = window.innerWidth;
+    };
+
+    const isDesktop = computed(() => windowWidth.value >= 1000);
+
+    onMounted(() => {
+      window.addEventListener('resize', updateWindowWidth);
+    });
+
+    onUnmounted(() => {
+      window.removeEventListener('resize', updateWindowWidth);
+    });
+
     return {
+      isDesktop,
       myPic,
       skillsData,
       projectsData
-    }
-  }
+    };
+  },
 };
 </script>
 
 <template>
-<h1 class="title on-primary">Home</h1>
 <div class="flex">
-  <div class="top-div">
+  <div v-if="isDesktop" class="top-div">
+    <h1 class="title on-primary">Home</h1>
     <div class="spacing"/>
     <div class="top-div-content">
       <div class="home-texts">
@@ -38,25 +60,28 @@ export default {
         <div class="spacing"></div>
         <SocialIcons />
       </div>
-      <img :src="myPic"/>
+      <div class="pic-container fade-in">
+        <img :src="myPic"/>
+      </div>
     </div>
   </div>
+  <MobileTopDiv v-else class=""></MobileTopDiv>
   <div class="recent-project">
-    <h2 class="recent-project-title">Proyecto mas reciente: {{ projectsData[0].name }}</h2>
+    <h2 class="recent-project-title"><b>Proyecto mas reciente:</b> {{ projectsData[0].name }}</h2>
     <p class="recent-project-text">{{ projectsData[0].description }}</p>
     <ButtonTemplate/>
     <img :src="`/assets/${projectsData[0].image}`"/>
   </div>
   <div class="skill-div flex gradient-background">
     <h2 class="content-title">SKILLS</h2>
-    <h2 class="skills-list-title">Programming Languages</h2>
+    <h2 class="skills-list-title">Languages</h2>
     <div class="skills-list">
       <div v-for="skill in skillsData.filter(skill => skill.type === 'Language')" :key="skill.name" class="skill">
         <img :src="`/assets/languages/${skill.image}`" class="skill-image" :alt="skill.name" />
         <h4 class="skill-text">{{ skill.name.toUpperCase() }}</h4>
       </div>
     </div>
-    <h2 class="skills-list-title">Database Tools</h2>
+    <h2 class="skills-list-title">Database</h2>
     <div class="skills-list">
       <div v-for="skill in skillsData.filter(skill => skill.type === 'Database')" :key="skill.name" class="skill">
         <img :src="`/assets/languages/${skill.image}`" class="skill-image" :alt="skill.name" />
@@ -86,14 +111,15 @@ export default {
       :title="project.name"
       :description="project.description"
       :image="project.image"
+      :skills="project.skills"
     />
   </div>
   <div class="contact-div flex gradient-background">
     <h2 class="content-title">CONTACT</h2>
     <p>Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.</p>
     <ContactForm/>
-    <ButtonTemplate/>
   </div>
+  <FooterComponent/>
 </div>
 </template>
 
@@ -118,12 +144,17 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
 }
 
 img {
   width: 800px;
   height: auto;
   display: block;
+}
+
+.pic-container {
+  overflow: hidden;
 }
 
 .home-texts{
@@ -215,6 +246,7 @@ img {
 .content-title {
   padding: 30px 120px;
   letter-spacing: 5px;
+  font-weight: 700;
   border: 7px solid var(--primary-color);
 }
 
@@ -245,7 +277,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 70px;
 }
 

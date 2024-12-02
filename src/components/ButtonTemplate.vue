@@ -14,7 +14,9 @@
     position: relative;
     background-color: var(--text-color); /* Color de fondo */
     color: var(--container-color); /* Color del texto */
-    border: none;
+    border: 3px solid var(--container-color);
+    border-top: 0px;
+    border-bottom: 0px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 14px;
@@ -27,32 +29,6 @@
 
 .read-more-button span {
     position: relative;
-}
-
-.read-more-button::before,
-.read-more-button::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 2px;
-    background-color: white; /* Color de las líneas */
-    top: 0;
-    transition: transform 0.3s ease;
-}
-
-.read-more-button::before {
-    left: 0;
-    transform: scaleY(1);
-}
-
-.read-more-button::after {
-    right: 0;
-    transform: scaleY(1);
-}
-
-.read-more-button:hover::before,
-.read-more-button:hover::after {
-    transform: scaleY(1.2);
 }
 
 .read-more-button:hover {

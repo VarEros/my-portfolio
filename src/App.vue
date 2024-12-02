@@ -29,14 +29,15 @@ body {
 }
 
 .title {
+  z-index: 100;
   color: var(--primary-color);
   font-family: 'Railway', sans-serif;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 4.5rem;
   right: 5vw;
   position: absolute;
   text-align: end;
-  padding: 20px;
+  padding: 10px;
 }
 
 .flex {

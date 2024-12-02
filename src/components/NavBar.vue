@@ -25,7 +25,8 @@ export default {
     width: 35%;
     min-width: 500px;
     max-width: 600px;
-    padding: 30px 100px;
+    padding-top: 40px;
+    padding-left: 100px;
     font-family: 'Monserrat', sans-serif; /* Cambia según tu fuente */
     font-weight: bold;
 }

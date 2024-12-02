@@ -41,6 +41,7 @@
   
   <style scoped>
   .social-icons {
+    z-index: 100;
     display: flex;
     gap: 15px;
     justify-content: start;

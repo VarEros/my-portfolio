@@ -1,11 +1,11 @@
 [
     {
-        "image": "typeScript.svg",
+        "image": "typescript.svg",
         "name": "TypeScript",
         "type": "Language"
     },
     {
-        "image": "js.svg",
+        "image": "javascript.svg",
         "name": "JavaScript",
         "type": "Language"
     },
@@ -43,11 +43,6 @@
         "image": "php.svg",
         "name": "PHP",
         "type": "Language"
-    },
-    {
-        "image": "mssql.svg",
-        "name": "MSSQL",
-        "type": "Database"
     },
     {
         "image": "dart.svg",
@@ -90,6 +85,11 @@
         "type": "Framework"
     },
     {
+        "image": "mssql.svg",
+        "name": "MSSQL",
+        "type": "Database"
+    },
+    {
         "image": "oracle.svg",
         "name": "Oracle DB",
         "type": "Database"
@@ -100,7 +100,7 @@
         "type": "Database"
     },
     {
-        "image": "sql.svg",
+        "image": "mysql.svg",
         "name": "MySQL",
         "type": "Database"
     },
