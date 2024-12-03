@@ -34,7 +34,7 @@ export default {
 <style scoped>
 .main {
     align-items: start;
-    justify-content: space-between;
+    justify-content: flex-end;
     z-index: 10;
     height: 100vh;
     background-image: -webkit-linear-gradient(110deg, var(--primary-color) 60%, var(--background-color) 60%);
@@ -47,6 +47,7 @@ export default {
   justify-content: end;
   width: 80vw;
   height: 30vh;
+  margin-bottom: -100px;
   color: var(--primary-color);
   font-family: 'Monserrat', sans-serif;
 }
@@ -75,15 +76,16 @@ img {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    font-weight: normal;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: var(--secondary-color);
 }

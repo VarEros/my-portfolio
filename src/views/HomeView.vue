@@ -9,6 +9,7 @@ import projectsData from '../assets/projects.json';
 import ContactForm from '@/components/ContactForm.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
 import MobileTopDiv from '@/components/MobileTopDiv.vue';
+import 'animate.css';
 
 export default {
   name: 'HomePage',
@@ -53,19 +54,19 @@ export default {
     <h1 class="title on-primary">Home</h1>
     <div class="spacing"/>
     <div class="top-div-content">
-      <div class="home-texts">
+      <div class="home-texts animate__animated animate__fadeInLeft">
         <h2>Hi, I am</h2>
         <h1>Erick Gonzalez</h1>
         <h3>Backend / Mobile Developer</h3>
         <div class="spacing"></div>
         <SocialIcons />
       </div>
-      <div class="pic-container fade-in">
-        <img :src="myPic"/>
+      <div class="pic-container animate__animated animate__fadeInRight">
+        <img :src="myPic" class="" />
       </div>
     </div>
   </div>
-  <MobileTopDiv v-else class=""></MobileTopDiv>
+  <MobileTopDiv v-else></MobileTopDiv>
   <div class="recent-project">
     <h2 class="recent-project-title"><b>Proyecto mas reciente:</b> {{ projectsData[0].name }}</h2>
     <p class="recent-project-text">{{ projectsData[0].description }}</p>
@@ -106,7 +107,7 @@ export default {
   <div class="project-div flex">
     <h2 class="content-title-dark">PROJECTS</h2>
     <ProjectCard
-      v-for="(project, index) in projectsData"
+      v-for="(project, index) in projectsData.slice(0, 2)"
       :key="index"
       :title="project.name"
       :description="project.description"
@@ -124,6 +125,19 @@ export default {
 </template>
 
 <style scoped>
+
+@media (max-width: 600px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 601px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 .on-primary{
   color: var(--background-color);
 }
@@ -155,6 +169,7 @@ img {
 
 .pic-container {
   overflow: hidden;
+  animation: 1.5s infinte img;
 }
 
 .home-texts{
@@ -173,6 +188,15 @@ img {
   padding: 50px 100px;
   background-color: var(--text-color);
   color: var(--container-color);
+}
+
+@media (max-width: 600px) {
+  .recent-project-text {
+    width: 100% !important;
+  }
+  .recent-project {
+    padding: 50px 50px;
+  }
 }
 
 .recent-project img {
@@ -221,6 +245,14 @@ img {
   grid-gap: 70px;
   grid-template-columns: repeat(auto-fill, 120px);
   margin-bottom: 70px;
+}
+
+@media (max-width: 540px) {
+  .skills-list {
+    grid-gap: 40px;
+    width: 80%;
+    justify-content: space-around;
+  }
 }
 
 .skill-image {

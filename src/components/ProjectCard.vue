@@ -71,7 +71,6 @@
   }
   
   .project-description {
-    font-size: 16px;
     color: var(--secondary-color);
     margin-bottom: 20px;
   }

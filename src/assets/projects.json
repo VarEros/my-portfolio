@@ -2,16 +2,16 @@
     {
         "image": "cclh_logo.png",
         "name": "Cartas Contra la Humanidad",
-        "title": "Awesome Project 1",
+        "title": "Juego Multijugador Online",
         "skills": ["flutter.svg", "nodejs.svg"],
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        "description": "Este proyecto es un rediseño personal del famoso juego Cartas contra la Humanidad, un juego de cartas para adultos que combina creatividad y humor negro al completar frases con respuestas irreverentes. La nueva versión cuenta con un diseño intuitivo que facilita la experiencia de juego, manteniendo su esencia original."
     },
     {
         "image": "taskitty_logo.svg",
         "name": "Taskitty",
-        "title": "Awesome Project 2",
+        "title": "Aplicación Android de Agenda y Notas",
         "skills": ["kotlin.svg", "sqlite.svg"],
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        "description": "TaskKitty es una aplicación móvil para Android diseñada para gestionar notas y fechas en el calendario con una encantadora temática de gatos. Ofrece opciones de personalización, permitiendo asignar colores únicos a cada nota y evento en la agenda, facilitando la organización visual. Su interfaz es amigable y atractiva."
     },
     {
         "image": "med_copilot_logo.png",
@@ -20,5 +20,12 @@
         "skills": ["flutter.svg", "dart.svg", "flask.svg", "python.svg", "mysql.svg"],
         "description": "La aplicación es un sistema de gestión de consultas médicas que permite administrar pacientes y sus consultas de manera eficiente. Los usuarios pueden visualizar, agregar, editar y eliminar pacientes, seleccionando información como nombre, apellido, fecha de nacimiento, contacto y seguimiento. ",
         "long": "La aplicación es un sistema de gestión de consultas médicas que permite administrar pacientes y sus consultas de manera eficiente. Los usuarios pueden visualizar, agregar, editar y eliminar pacientes, seleccionando información como nombre, apellido, fecha de nacimiento, contacto y seguimiento. Además, las consultas se vinculan a pacientes específicos, permitiendo agregar descripciones y gestionar los registros. Disponible en versiones para escritorio y dispositivos móviles, la aplicación está diseñada para optimizar la atención al paciente y mejorar la eficiencia operativa de clínicas y consultorios médicos."
+    },
+    {
+        "image": "room_manager_ref.svg",
+        "name": "Room Manager",
+        "title": "Aplicación Desktop para Reserva de Salas",
+        "skills": ["flutter.svg", "spring.svg"],
+        "description": "Este programa permite gestionar salas y registrar eventos asociados mediante un calendario intuitivo. Ofrece la posibilidad de categorizar las salas según áreas, facilitando su organización y uso. Ideal para coordinar actividades, su diseño está enfocado en simplificar la planificación y el acceso a la información de cada espacio."
     }
 ]

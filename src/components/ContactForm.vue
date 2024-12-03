@@ -13,7 +13,7 @@
         <div class="form-group">
           <textarea id="message" rows="5" placeholder="YOUR MESSAGE*"></textarea>
         </div>
-        <button class="submit-button">
+        <button class="special-button submit">
           <span>SUBMIT</span>
         </button>
       </form>
@@ -78,37 +78,11 @@
   textarea::placeholder {
     text-transform: uppercase;
   }
-
-  .submit-button {
-    font-family: 'Monserrat', sans-serif;
-    margin-top: 20px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-color: transparent; /* Color de fondo */
-    color: var(--primary-color); /* Color del texto */
-    border: 3px solid var(--primary-color);
+  
+  .submit {
     border-top: 0px;
     border-bottom: 0px;
     padding: 10px 50px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    bottom: 0;
-}
-
-.submit-button span {
-    position: relative;
-}
-
-.submit-button:hover {
-    color: var(--container-color);
-    background-color: var(--primary-color)
-}
+  }
   </style>
   

@@ -31,6 +31,14 @@ export default {
     font-weight: bold;
 }
 
+@media (max-width: 700px) {
+.navbar {
+    padding-left: 0px;
+    min-width: 400px;
+}
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+}
+
 /* Estilos para los links */
 .nav-links {
     display: flex;
