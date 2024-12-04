@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <NavBar/>
-    <div class="all">
-      <router-view></router-view>
-    </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -19,11 +17,9 @@ export default {
 </script>
 
 <style>
-.all {
-  overflow: hidden;
-}
 
 body {
+  overflow-x: hidden;
   background: radial-gradient(rgba(255,255,255,1) 0%, rgba(214,214,214,1) 44%);  
   background-size: 100% 250%;
   background-position: 0% 50%;
@@ -44,6 +40,15 @@ body {
   position: absolute;
   text-align: end;
   padding: 10px;
+  
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+@media (max-width: 1000px) {
+  .title {
+    display: none;
+  }
 }
 
 .flex {

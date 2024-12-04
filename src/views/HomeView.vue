@@ -107,7 +107,7 @@ export default {
   <div class="project-div flex">
     <h2 class="content-title-dark">PROJECTS</h2>
     <ProjectCard
-      v-for="(project, index) in projectsData.slice(0, 2)"
+      v-for="(project, index) in projectsData.slice(0, 3)"
       :key="index"
       :title="project.name"
       :description="project.description"
@@ -125,18 +125,6 @@ export default {
 </template>
 
 <style scoped>
-
-@media (max-width: 600px) {
-  body {
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 601px) {
-  body {
-    font-size: 16px;
-  }
-}
 
 .on-primary{
   color: var(--background-color);
@@ -190,13 +178,19 @@ img {
   color: var(--container-color);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .recent-project-text {
     width: 100% !important;
   }
   .recent-project {
     padding: 50px 50px;
   }
+}
+
+@media (max-width: 480px) {
+  .skill-image {
+  width: 80px !important;
+}
 }
 
 .recent-project img {
@@ -276,14 +270,14 @@ img {
 }
 
 .content-title {
-  padding: 30px 120px;
+  padding: 30px 7.5rem;
   letter-spacing: 5px;
   font-weight: 700;
   border: 7px solid var(--primary-color);
 }
 
 .content-title-dark {
-  padding: 30px 120px;
+  padding: 30px 7.5rem;
   letter-spacing: 5px;
   border: 7px solid var(--container-color);
 }
@@ -303,14 +297,25 @@ img {
   padding: 5vh 15vw;
 }
 
+@media (max-width: 768px) {
+  .contact-div {
+    padding: 5vh 5vw;
+  }
+}
+
+@media (max-height: 700px) {
+  .contact-div p {
+    display: none;
+  }
+}
+
 h1 {
   font-size: 5rem;
 }
 
 h2 {
-  font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 70px;
+  margin-bottom: 10vh;
 }
 
 h3 {

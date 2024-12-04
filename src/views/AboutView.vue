@@ -36,11 +36,11 @@ export default {
   <h1 class="title">About me</h1>
   <div class="main">
     <div class="image-container">
-      <img :src="myPic" alt="Ejemplo" class="main-image" />
+      <img :src="myPic" alt="Ejemplo" class="main-image animate__animated animate__zoomIn" />
     </div>
-    <div class="flex content">
+    <div class="flex content animate__animated animate__fadeInRight">
       <div class="flex text">
-        <h2>How am I?</h2>
+        <h2>Who am I?</h2>
         <p>I am currently a master’s student in Applied Geoinformatics at the  University of Salzburg, Austria. I have a keen interest in front-end and  GIS development. My goal is to use my expertise in building exciting  and functional user interfaces. Additionally, employ my geospatial  analysis, modeling, and process automation skills to engineer  innovative, customizable, and sustainable software solutions. The following are tech stacks that I use regularly:</p>
         <div class="hobbies-list">
           <div class="flex" v-for="hobby in icons" :key="hobby.name">
@@ -129,8 +129,7 @@ h4 {
   display: block;
   position: relative;
   z-index: 2; /* Asegura que la imagen esté delante */
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
 }
 
 /* Forma detrás de la imagen */
@@ -143,6 +142,28 @@ h4 {
   height: 100%;
   background-color: var(--primary-color); /* Color de la forma */
   z-index: 1; /* Asegura que esté detrás de la imagen */
+}
+
+@media (max-width: 768px) {
+  .main {
+    overflow: auto;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .text {
+    gap: 3vh;
+  }
+  .content {
+    width: auto;
+    align-items: center;
+    padding: 16px;
+  }
+  .image-container {
+    height: 35vh;
+  }
+  .main-image {
+    height: 100%;
+  }
 }
 
 </style>

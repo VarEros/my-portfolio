@@ -4,7 +4,7 @@
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/projects">Projects</router-link></li>
         <li><router-link to="/about">About Me</router-link></li>
-        <a href="#contact" class="contact-button">CONTACT ME</a>
+        <a v-if="isHome" href="#" @click.prevent="scrollToBottom" class="contact-button">CONTACT ME</a>
         </ul>
     </nav>
 </template>
@@ -13,6 +13,20 @@
 
 export default {
     name: 'NavBar',
+    computed: {
+        isHome() {
+            return this.$route.path === "/"; // Devuelve true si la ruta actual es "/"
+        },
+    },
+    methods: {
+        scrollToBottom() {
+        const totalHeight = document.documentElement.scrollHeight; // Altura total de la página
+        window.scrollTo({
+            top: totalHeight - 1170, 
+            behavior: "smooth",
+        });
+        },
+    }
 };
 </script>
 
@@ -31,14 +45,6 @@ export default {
     font-weight: bold;
 }
 
-@media (max-width: 700px) {
-.navbar {
-    padding-left: 0px;
-    min-width: 400px;
-}
-  /* CSS that should be displayed if width is equal to or less than 800px goes here */
-}
-
 /* Estilos para los links */
 .nav-links {
     display: flex;
@@ -47,6 +53,20 @@ export default {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        padding: 0;
+        min-width: 0px;
+        max-width: 100vw;
+        width: 100%;
+        text-align: -webkit-center;
+    }
+    .nav-links {
+        margin: 16px;
+        max-width: 700px;
+    }
 }
 
 .nav-links li a {

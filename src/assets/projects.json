@@ -22,7 +22,7 @@
         "long": "La aplicación es un sistema de gestión de consultas médicas que permite administrar pacientes y sus consultas de manera eficiente. Los usuarios pueden visualizar, agregar, editar y eliminar pacientes, seleccionando información como nombre, apellido, fecha de nacimiento, contacto y seguimiento. Además, las consultas se vinculan a pacientes específicos, permitiendo agregar descripciones y gestionar los registros. Disponible en versiones para escritorio y dispositivos móviles, la aplicación está diseñada para optimizar la atención al paciente y mejorar la eficiencia operativa de clínicas y consultorios médicos."
     },
     {
-        "image": "room_manager_ref.svg",
+        "image": "room_manager_ref.png",
         "name": "Room Manager",
         "title": "Aplicación Desktop para Reserva de Salas",
         "skills": ["flutter.svg", "spring.svg"],

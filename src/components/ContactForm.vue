@@ -28,7 +28,7 @@
   
   <style scoped>
   .contact-form {
-    padding-top: 100px;
+    padding-top: 7vh;
     width: 80%;
   }
 
@@ -49,7 +49,7 @@
     border: none;
     border-bottom: 4px solid var(--primary-color);  
     border-left: 4px solid var(--primary-color);
-    font-size: 16px;
+    font-size: 1rem;
     padding-bottom: 9px;
     padding-top: 18px;
     padding-left: 10px;
@@ -62,7 +62,7 @@
     color: var(--secondary-color);
     font-family: 'Monserrat', sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1rem;
     text-transform: uppercase;
   }
   
@@ -84,5 +84,11 @@
     border-bottom: 0px;
     padding: 10px 50px;
   }
+
+  @media (max-height: 700px) {
+  .contact-form {
+    padding-top: 0px;
+  }
+}
   </style>
   

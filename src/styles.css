@@ -3,7 +3,12 @@ h1, h2, h3, h4, h5, h6, p, li {
     margin: 0;
   }
 
+  h1 {
+    font-size: 3em;
+  }
+
   h2 {
+    font-size: 2rem;
     line-height: 1; /* Ajusta el espacio entre las líneas de texto */
   }
 
@@ -25,4 +30,20 @@ h1, h2, h3, h4, h5, h6, p, li {
     --background-color: #D7D7D7;
     --text-color: #1D1D1D;
     --container-color: #FFFFFF;
+  }
+
+  html {
+    font-size: 16px; /* Base normal */
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px; /* Para pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    html {
+      font-size: 12px; /* Para pantallas pequeñas */
+    }
   }

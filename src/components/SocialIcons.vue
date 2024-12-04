@@ -21,7 +21,7 @@
           {
             name: 'Email',
             src: require('@/assets/icons/media/email.svg'), // Ruta de tu ícono de email
-            link: 'mailto:your-email@example.com',
+            link: 'mailto:erickgonzalezg2004@gmail.com',
           },
           {
             name: 'GitHub',
@@ -31,7 +31,7 @@
           {
             name: 'LinkedIn',
             src: require('@/assets/icons/media/linkedin.svg'), // Ruta de tu ícono de LinkedIn
-            link: 'https://linkedin.com/in/yourprofile',
+            link: 'https://www.linkedin.com/in/erick-oswaldo-gonzález-gallegos-13b8b2267/',
           },
         ],
       };
@@ -59,6 +59,14 @@
     align-items: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  
+  @media (max-width: 768px) {
+    .social-icon {
+      width: 60px;
+      height: 60px;
+    }
   }
   
   .social-icon img {

@@ -5,13 +5,13 @@
         <h4>BACK TO TOP</h4>
       </a>
       <div class="social-icons">
-        <a href="#" aria-label="Facebook">
+        <a href="https://www.facebook.com/profile.php?id=100022601452185" aria-label="Facebook">
           <i class="fab fa-facebook"></i>
         </a>
-        <a href="#" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/erick-oswaldo-gonzález-gallegos-13b8b2267/" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="#" aria-label="Instagram">
+        <a href="https://www.instagram.com/erick_glez04/" aria-label="Instagram">
           <i class="fab fa-instagram"></i>
         </a>
         <a href="#" aria-label="Email">
@@ -19,7 +19,7 @@
         </a>
       </div>
       <div class="copyright">
-        <b>&copy; 2024 Erick Gonzalez</b> All Rights Reserved.
+        <b>&copy; 2024 Erick Gonzalez.</b> All Rights Reserved.
       </div>
     </footer>
   </template>

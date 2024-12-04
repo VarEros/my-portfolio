@@ -1,13 +1,13 @@
 <template>
 <div class="flex main">
-    <div class="home-texts">
+    <div class="home-texts animate__animated animate__fadeInLeft">
         <h2>Hi, I am</h2>
         <h1>Erick Gonzalez</h1>
         <h3>Backend / Mobile Developer</h3>
     </div>
     <div class="home-bottom">
-        <SocialIcons class="small-padding"/>
-        <div class="pic-container">
+        <SocialIcons class="small-padding animate__animated animate__fadeInLeft"/>
+        <div class="pic-container animate__animated animate__fadeInRight">
             <img :src="myPic"/>
         </div>
     </div>
@@ -47,7 +47,7 @@ export default {
   justify-content: end;
   width: 80vw;
   height: 30vh;
-  margin-bottom: -100px;
+  margin-bottom: -50px;
   color: var(--primary-color);
   font-family: 'Monserrat', sans-serif;
 }
@@ -65,9 +65,15 @@ export default {
     overflow: hidden;
 }
 
+@media (max-width: 480px) {
+    .pic-container {
+        margin-left: -250px;
+    }
+}
+
 img {
-    width: 700px;
-    height: auto;
+    width: auto;
+    height: 75vh;
     display: block;
 }
 

@@ -2,12 +2,11 @@
     <div class="project-card">
       <div class="project-content">
         <h2 class="project-title">{{ title }}</h2>
-        <p class="project-description">{{ description }}</p>        
+        <p class="project-description truncate">{{ description }}</p>        
         <div class="skills-container">
           <img v-for="(skill, index) in skills" :key="index" :src="'/assets/languages/'+skill" :alt="'skill'"/>
         </div>
         <button class="project-button">View Project</button>
-
       </div>
       <div class="project-image">
         <img :src="'/assets/'+image" :alt="title" />
@@ -50,6 +49,15 @@
     min-width: 650px;
     height: 500px;
     margin: 20px auto;
+  }
+
+  @media (max-width: 650px) {
+    .project-card {
+      width: 100%;  
+      min-width: 0px;
+      height: 80vw;
+      min-height: 400px;
+    }
   }
   
   .project-content {
@@ -121,5 +129,14 @@
     display: block;
     object-fit: cover;
   }
+
+  .truncate {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 8;
+           line-clamp: 8;
+   -webkit-box-orient: vertical;
+}
   </style>
   
