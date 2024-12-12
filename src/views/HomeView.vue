@@ -28,7 +28,7 @@ export default {
       windowWidth.value = window.innerWidth;
     };
 
-    const isDesktop = computed(() => windowWidth.value >= 1000);
+    const isDesktop = computed(() => windowWidth.value > 1000);
 
     onMounted(() => {
       window.addEventListener('resize', updateWindowWidth);
@@ -49,7 +49,7 @@ export default {
 </script>
 
 <template>
-<div class="flex">
+<div class="flex main">
   <div v-if="isDesktop" class="top-div">
     <h1 class="title on-primary">Home</h1>
     <div class="spacing"/>
@@ -128,6 +128,10 @@ export default {
 
 .on-primary{
   color: var(--background-color);
+}
+
+.main {
+  overflow: hidden;
 }
 
 .top-div {

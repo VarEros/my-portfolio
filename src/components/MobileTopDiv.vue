@@ -7,7 +7,7 @@
     </div>
     <div class="home-bottom">
         <SocialIcons class="small-padding animate__animated animate__fadeInLeft"/>
-        <div class="pic-container animate__animated animate__fadeInRight">
+        <div class="pic-container ">
             <img :src="myPic"/>
         </div>
     </div>

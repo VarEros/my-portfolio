@@ -2,8 +2,8 @@
 <div class="title">Projects</div>
 <div class="spacing"></div>
 <div class="flex-projects">
-  <div v-for="(project, index) in projects" :key="project.name" class="project animate__animated animate__fadeInRight"
-  :style="{ animationDelay: `${index * 0.2}s` }">
+  <div v-for="(project, index) in projects" :key="index" class="project animate__animated animate__fadeInRight"
+  :style="{ animationDelay: `${index * 0.1}s` }">
     <img :src="`/assets/${project.image}`" :alt="project.name" />
     <div class="content"> 
       <div class="titles">
@@ -77,6 +77,7 @@ p {
 }
 
 .flex-projects {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
