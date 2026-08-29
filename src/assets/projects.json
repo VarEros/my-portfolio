@@ -1,31 +1,35 @@
 [
-    {
-        "image": "cclh_logo.png",
-        "name": "Cartas Contra la Humanidad",
-        "title": "Juego Multijugador Online",
-        "skills": ["flutter.svg", "nodejs.svg"],
-        "description": "Este proyecto es un rediseño personal del famoso juego Cartas contra la Humanidad, un juego de cartas para adultos que combina creatividad y humor negro al completar frases con respuestas irreverentes. La nueva versión cuenta con un diseño intuitivo que facilita la experiencia de juego, manteniendo su esencia original."
-    },
-    {
-        "image": "taskitty_logo.svg",
-        "name": "Taskitty",
-        "title": "Aplicación Android de Agenda y Notas",
-        "skills": ["kotlin.svg", "sqlite.svg"],
-        "description": "TaskKitty es una aplicación móvil para Android diseñada para gestionar notas y fechas en el calendario con una encantadora temática de gatos. Ofrece opciones de personalización, permitiendo asignar colores únicos a cada nota y evento en la agenda, facilitando la organización visual. Su interfaz es amigable y atractiva."
-    },
-    {
-        "image": "med_copilot_logo.png",
-        "name": "Med Copilot",
-        "title": "Aplicacion Multiplataforma para Gestion de Consultas",
-        "skills": ["flutter.svg", "dart.svg", "flask.svg", "python.svg", "mysql.svg"],
-        "description": "La aplicación es un sistema de gestión de consultas médicas que permite administrar pacientes y sus consultas de manera eficiente. Los usuarios pueden visualizar, agregar, editar y eliminar pacientes, seleccionando información como nombre, apellido, fecha de nacimiento, contacto y seguimiento. ",
-        "long": "La aplicación es un sistema de gestión de consultas médicas que permite administrar pacientes y sus consultas de manera eficiente. Los usuarios pueden visualizar, agregar, editar y eliminar pacientes, seleccionando información como nombre, apellido, fecha de nacimiento, contacto y seguimiento. Además, las consultas se vinculan a pacientes específicos, permitiendo agregar descripciones y gestionar los registros. Disponible en versiones para escritorio y dispositivos móviles, la aplicación está diseñada para optimizar la atención al paciente y mejorar la eficiencia operativa de clínicas y consultorios médicos."
-    },
-    {
-        "image": "room_manager_ref.png",
-        "name": "Room Manager",
-        "title": "Aplicación Desktop para Reserva de Salas",
-        "skills": ["flutter.svg", "spring.svg"],
-        "description": "Este programa permite gestionar salas y registrar eventos asociados mediante un calendario intuitivo. Ofrece la posibilidad de categorizar las salas según áreas, facilitando su organización y uso. Ideal para coordinar actividades, su diseño está enfocado en simplificar la planificación y el acceso a la información de cada espacio."
-    }
+  {
+    "image": "cclh_logo.png",
+    "name": "Cards Against Humanity",
+    "repository": "cclh",
+    "title": "Online Multiplayer Game",
+    "skills": ["flutter.svg", "nodejs.svg"],
+    "description": "This project is a personal redesign of the popular game Cards Against Humanity, an adult card game that combines creativity and dark humor by completing phrases with irreverent answers. The new version features an intuitive design that enhances the gaming experience while maintaining its original essence."
+  },
+  {
+    "image": "taskitty_logo.svg",
+    "name": "Taskitty",
+    "repository": "TasKitty",
+    "title": "Android Agenda & Notes App",
+    "skills": ["kotlin.svg", "sqlite.svg"],
+    "description": "TaskKitty is an Android mobile application designed to manage notes and calendar dates with a charming cat theme. It offers customization options, allowing users to assign unique colors to each note and calendar event for easier visual organization. Its interface is friendly and attractive."
+  },
+  {
+    "image": "med_copilot_logo.png",
+    "name": "Med Copilot",
+    "repository": "med_copilot_1",
+    "title": "Cross-Platform Consultation Management App",
+    "skills": ["flutter.svg", "dart.svg", "flask.svg", "python.svg", "mysql.svg"],
+    "description": "This application is a medical consultation management system that enables efficient administration of patients and their appointments. Users can view, add, edit, and delete patient records, including information such as first and last name, date of birth, contact details, and follow-ups.",
+    "long": "This application is a medical consultation management system that enables efficient administration of patients and their appointments. Users can view, add, edit, and delete patient records, including information such as first and last name, date of birth, contact details, and follow-ups. Additionally, consultations are linked to specific patients, allowing users to add descriptions and manage records. Available on desktop and mobile devices, the app is designed to optimize patient care and improve the operational efficiency of clinics and medical practices."
+  },
+  {
+    "image": "room_manager_ref.png",
+    "name": "Room Manager",
+    "repository": "room_manager",
+    "title": "Desktop Room Booking App",
+    "skills": ["flutter.svg", "spring.svg"],
+    "description": "This application allows users to manage rooms and schedule associated events through an intuitive calendar. It offers the ability to categorize rooms by area, streamlining their organization and usage. Ideal for coordinating activities, its design focuses on simplifying planning and access to room availability."
+  }
 ]

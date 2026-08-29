@@ -29,6 +29,14 @@ export default {
           },
         ],
       };
+  },
+  methods: {
+    downloadResume() {
+      const link = document.createElement('a');
+      link.href = '/assets/docs/erick_gonzalez_cv.pdf'; 
+      link.download = 'erick_gonzalez_cv.pdf'; 
+      link.click();
+    }
   }
 }
 </script>
@@ -42,7 +50,6 @@ export default {
       <div class="flex text">
         <h2>Who am I?</h2>
         <p>Soy Erick O. González Gallegos, actualmente soy estudiante de Ingenieria en Sistemas de Información de la Universidad Nacional Casimiro Sotelo, pero atribuyo todos mis conocimientos a la extinta UCA. Dedico mis ratos libres a leer, tocar el piano y sobre toda a desarrollar proyectos que supongan un reto y me obligue a aprender cosas nuevas. Me gusta mucho el desarrollo en moviles con Flutter, me considero habil esquematizando bases de datos.</p>
-        <!-- <p>I am currently a master’s student in Applied Geoinformatics at the  University of Salzburg, Austria. I have a keen interest in front-end and  GIS development. My goal is to use my expertise in building exciting  and functional user interfaces. Additionally, employ my geospatial  analysis, modeling, and process automation skills to engineer  innovative, customizable, and sustainable software solutions. The following are tech stacks that I use regularly:</p> -->
         <div class="hobbies-list">
           <div class="flex" v-for="hobby in icons" :key="hobby.name">
             <img :src="hobby.src" class="icon"/>
@@ -50,7 +57,7 @@ export default {
           </div>
         </div>
       </div>
-      <button class="special-button ">
+      <button class="special-button" @click="downloadResume">
         <span>Download Resume</span>
       </button>
     </div>

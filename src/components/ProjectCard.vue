@@ -6,7 +6,7 @@
         <div class="skills-container">
           <img v-for="(skill, index) in skills" :key="index" :src="'/assets/languages/'+skill" :alt="'skill'"/>
         </div>
-        <button class="project-button">View Project</button>
+        <button class="project-button" @click="openProject">View Project</button>
       </div>
       <div class="project-image">
         <img :src="'/assets/'+image" :alt="title" />
@@ -23,6 +23,10 @@
         type: String,
         required: true,
       },
+      repository: {
+        type: String,
+        required: true,
+      },
       description: {
         type: String,
         required: true,
@@ -35,8 +39,14 @@
         type: Array,
         required: true,
       }
+    },
+    methods: {
+      openProject() {
+        window.open(`https://github.com/VarEros/${this.repository}`, '_blank');
+      }
     }
   };
+  
   </script>
   
   <style scoped>

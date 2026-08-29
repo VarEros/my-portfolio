@@ -57,7 +57,7 @@ export default {
       <div class="home-texts animate__animated animate__fadeInLeft">
         <h2>Hi, I am</h2>
         <h1>Erick Gonzalez</h1>
-        <h3>Backend / Mobile Developer</h3>
+        <h3>Fullstack Developer</h3>
         <div class="spacing"></div>
         <SocialIcons />
       </div>
@@ -68,7 +68,7 @@ export default {
   </div>
   <MobileTopDiv v-else></MobileTopDiv>
   <div class="recent-project">
-    <h2 class="recent-project-title"><b>Proyecto mas reciente:</b> {{ projectsData[0].name }}</h2>
+    <h2 class="recent-project-title"><b>Most Recent Project:</b> {{ projectsData[0].name }}</h2>
     <p class="recent-project-text">{{ projectsData[0].description }}</p>
     <ButtonTemplate/>
     <img :src="`/assets/${projectsData[0].image}`"/>
@@ -110,6 +110,7 @@ export default {
       v-for="(project, index) in projectsData.slice(0, 3)"
       :key="index"
       :title="project.name"
+      :repository="project.repository"
       :description="project.description"
       :image="project.image"
       :skills="project.skills"
@@ -117,7 +118,7 @@ export default {
   </div>
   <div class="contact-div flex gradient-background">
     <h2 class="content-title">CONTACT</h2>
-    <p>Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.</p>
+    <p>Whether you have a project in mind, a question about my work, or just want to connect, feel free to reach out—I’m always open to new opportunities and ideas.</p>
     <ContactForm/>
   </div>
   <FooterComponent/>
@@ -298,7 +299,7 @@ img {
   width: auto;
   color: var(--primary-color);
   font-family: 'Monserrat', sans-serif;
-  padding: 5vh 15vw;
+  padding: 5vh 17vw;
 }
 
 @media (max-width: 768px) {
